@@ -9,7 +9,6 @@ BOT_PREFIX = ('?', '!')
 TOKEN = 'XXXXXXXXXXXXXXXXXXXXX'
 # make a list of links of it in the future to choose random site
 TRUMP_QUOTE_URL = """https://www.tronalddump.io/random/quote"""
-TRANSLATOR_URL = """https://translation.googleapis.com/language/translate/v2"""
 REDDIT_URLS = [
     """https://www.reddit.com/r/MemesOfTheGreatWar/.json""",
     """https://www.reddit.com/r/Dank/.json""",
@@ -51,7 +50,7 @@ async def on_connect():
     for channel in channels:
         if (channel.name == "general") or (channel.name =="ogólny"):
             main_channel = channel
-    await main_channel.send("""Yo bitches, I'm back""")
+    await main_channel.send("""Hello there""")
 
 @bot.command(name='meme',
              brief='Returns a random meme from reddit',
